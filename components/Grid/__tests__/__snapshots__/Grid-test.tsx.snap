@@ -1243,61 +1243,71 @@ exports[`Grid component Renders correctly 1`] = `
               {
                 "alignItems": "center",
                 "flexDirection": "row",
-                "gap": 5,
+                "justifyContent": "space-between",
               }
             }
           >
-            <ViewManagerAdapter_ExpoImage
-              borderRadius={5}
-              containerViewRef={"[React.ref]"}
-              contentFit="cover"
-              contentPosition={
-                {
-                  "left": "50%",
-                  "top": "50%",
-                }
-              }
-              height={20}
-              nativeViewRef={"[React.ref]"}
-              onError={[Function]}
-              onLoad={[Function]}
-              onLoadStart={[Function]}
-              onProgress={[Function]}
-              placeholder={[]}
-              source={
-                [
-                  {
-                    "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
-                  },
-                ]
-              }
+            <View
               style={
                 {
-                  "borderRadius": 5,
-                  "height": 20,
-                  "width": 20,
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "gap": 5,
                 }
-              }
-              transition={null}
-              width={20}
-            />
-            <Text
-              size="small"
-              style={
-                [
-                  {
-                    "color": "#FFFFFF",
-                  },
-                  undefined,
-                  {
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                  },
-                ]
               }
             >
-              perawallet
-            </Text>
+              <ViewManagerAdapter_ExpoImage
+                borderRadius={5}
+                containerViewRef={"[React.ref]"}
+                contentFit="cover"
+                contentPosition={
+                  {
+                    "left": "50%",
+                    "top": "50%",
+                  }
+                }
+                height={20}
+                nativeViewRef={"[React.ref]"}
+                onError={[Function]}
+                onLoad={[Function]}
+                onLoadStart={[Function]}
+                onProgress={[Function]}
+                placeholder={[]}
+                source={
+                  [
+                    {
+                      "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
+                    },
+                  ]
+                }
+                style={
+                  {
+                    "borderRadius": 5,
+                    "height": 20,
+                    "width": 20,
+                  }
+                }
+                transition={null}
+                width={20}
+              />
+              <Text
+                size="small"
+                style={
+                  [
+                    {
+                      "color": "#FFFFFF",
+                    },
+                    undefined,
+                    {
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                perawallet
+              </Text>
+            </View>
           </View>
           <Text
             style={
@@ -1557,61 +1567,71 @@ exports[`Grid component Renders correctly 1`] = `
               {
                 "alignItems": "center",
                 "flexDirection": "row",
-                "gap": 5,
+                "justifyContent": "space-between",
               }
             }
           >
-            <ViewManagerAdapter_ExpoImage
-              borderRadius={5}
-              containerViewRef={"[React.ref]"}
-              contentFit="cover"
-              contentPosition={
-                {
-                  "left": "50%",
-                  "top": "50%",
-                }
-              }
-              height={20}
-              nativeViewRef={"[React.ref]"}
-              onError={[Function]}
-              onLoad={[Function]}
-              onLoadStart={[Function]}
-              onProgress={[Function]}
-              placeholder={[]}
-              source={
-                [
-                  {
-                    "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
-                  },
-                ]
-              }
+            <View
               style={
                 {
-                  "borderRadius": 5,
-                  "height": 20,
-                  "width": 20,
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "gap": 5,
                 }
-              }
-              transition={null}
-              width={20}
-            />
-            <Text
-              size="small"
-              style={
-                [
-                  {
-                    "color": "#FFFFFF",
-                  },
-                  undefined,
-                  {
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                  },
-                ]
               }
             >
-              perawallet
-            </Text>
+              <ViewManagerAdapter_ExpoImage
+                borderRadius={5}
+                containerViewRef={"[React.ref]"}
+                contentFit="cover"
+                contentPosition={
+                  {
+                    "left": "50%",
+                    "top": "50%",
+                  }
+                }
+                height={20}
+                nativeViewRef={"[React.ref]"}
+                onError={[Function]}
+                onLoad={[Function]}
+                onLoadStart={[Function]}
+                onProgress={[Function]}
+                placeholder={[]}
+                source={
+                  [
+                    {
+                      "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
+                    },
+                  ]
+                }
+                style={
+                  {
+                    "borderRadius": 5,
+                    "height": 20,
+                    "width": 20,
+                  }
+                }
+                transition={null}
+                width={20}
+              />
+              <Text
+                size="small"
+                style={
+                  [
+                    {
+                      "color": "#FFFFFF",
+                    },
+                    undefined,
+                    {
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                perawallet
+              </Text>
+            </View>
           </View>
           <Text
             style={
@@ -1890,61 +1910,71 @@ exports[`Grid component Renders correctly 1`] = `
               {
                 "alignItems": "center",
                 "flexDirection": "row",
-                "gap": 5,
+                "justifyContent": "space-between",
               }
             }
           >
-            <ViewManagerAdapter_ExpoImage
-              borderRadius={5}
-              containerViewRef={"[React.ref]"}
-              contentFit="cover"
-              contentPosition={
-                {
-                  "left": "50%",
-                  "top": "50%",
-                }
-              }
-              height={20}
-              nativeViewRef={"[React.ref]"}
-              onError={[Function]}
-              onLoad={[Function]}
-              onLoadStart={[Function]}
-              onProgress={[Function]}
-              placeholder={[]}
-              source={
-                [
-                  {
-                    "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
-                  },
-                ]
-              }
+            <View
               style={
                 {
-                  "borderRadius": 5,
-                  "height": 20,
-                  "width": 20,
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "gap": 5,
                 }
-              }
-              transition={null}
-              width={20}
-            />
-            <Text
-              size="small"
-              style={
-                [
-                  {
-                    "color": "#FFFFFF",
-                  },
-                  undefined,
-                  {
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                  },
-                ]
               }
             >
-              perawallet
-            </Text>
+              <ViewManagerAdapter_ExpoImage
+                borderRadius={5}
+                containerViewRef={"[React.ref]"}
+                contentFit="cover"
+                contentPosition={
+                  {
+                    "left": "50%",
+                    "top": "50%",
+                  }
+                }
+                height={20}
+                nativeViewRef={"[React.ref]"}
+                onError={[Function]}
+                onLoad={[Function]}
+                onLoadStart={[Function]}
+                onProgress={[Function]}
+                placeholder={[]}
+                source={
+                  [
+                    {
+                      "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
+                    },
+                  ]
+                }
+                style={
+                  {
+                    "borderRadius": 5,
+                    "height": 20,
+                    "width": 20,
+                  }
+                }
+                transition={null}
+                width={20}
+              />
+              <Text
+                size="small"
+                style={
+                  [
+                    {
+                      "color": "#FFFFFF",
+                    },
+                    undefined,
+                    {
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                perawallet
+              </Text>
+            </View>
           </View>
           <Text
             style={
@@ -2204,61 +2234,71 @@ exports[`Grid component Renders correctly 1`] = `
               {
                 "alignItems": "center",
                 "flexDirection": "row",
-                "gap": 5,
+                "justifyContent": "space-between",
               }
             }
           >
-            <ViewManagerAdapter_ExpoImage
-              borderRadius={5}
-              containerViewRef={"[React.ref]"}
-              contentFit="cover"
-              contentPosition={
-                {
-                  "left": "50%",
-                  "top": "50%",
-                }
-              }
-              height={20}
-              nativeViewRef={"[React.ref]"}
-              onError={[Function]}
-              onLoad={[Function]}
-              onLoadStart={[Function]}
-              onProgress={[Function]}
-              placeholder={[]}
-              source={
-                [
-                  {
-                    "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
-                  },
-                ]
-              }
+            <View
               style={
                 {
-                  "borderRadius": 5,
-                  "height": 20,
-                  "width": 20,
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "gap": 5,
                 }
-              }
-              transition={null}
-              width={20}
-            />
-            <Text
-              size="small"
-              style={
-                [
-                  {
-                    "color": "#FFFFFF",
-                  },
-                  undefined,
-                  {
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                  },
-                ]
               }
             >
-              perawallet
-            </Text>
+              <ViewManagerAdapter_ExpoImage
+                borderRadius={5}
+                containerViewRef={"[React.ref]"}
+                contentFit="cover"
+                contentPosition={
+                  {
+                    "left": "50%",
+                    "top": "50%",
+                  }
+                }
+                height={20}
+                nativeViewRef={"[React.ref]"}
+                onError={[Function]}
+                onLoad={[Function]}
+                onLoadStart={[Function]}
+                onProgress={[Function]}
+                placeholder={[]}
+                source={
+                  [
+                    {
+                      "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
+                    },
+                  ]
+                }
+                style={
+                  {
+                    "borderRadius": 5,
+                    "height": 20,
+                    "width": 20,
+                  }
+                }
+                transition={null}
+                width={20}
+              />
+              <Text
+                size="small"
+                style={
+                  [
+                    {
+                      "color": "#FFFFFF",
+                    },
+                    undefined,
+                    {
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                perawallet
+              </Text>
+            </View>
           </View>
           <Text
             style={
@@ -2537,61 +2577,71 @@ exports[`Grid component Renders correctly 1`] = `
               {
                 "alignItems": "center",
                 "flexDirection": "row",
-                "gap": 5,
+                "justifyContent": "space-between",
               }
             }
           >
-            <ViewManagerAdapter_ExpoImage
-              borderRadius={5}
-              containerViewRef={"[React.ref]"}
-              contentFit="cover"
-              contentPosition={
-                {
-                  "left": "50%",
-                  "top": "50%",
-                }
-              }
-              height={20}
-              nativeViewRef={"[React.ref]"}
-              onError={[Function]}
-              onLoad={[Function]}
-              onLoadStart={[Function]}
-              onProgress={[Function]}
-              placeholder={[]}
-              source={
-                [
-                  {
-                    "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
-                  },
-                ]
-              }
+            <View
               style={
                 {
-                  "borderRadius": 5,
-                  "height": 20,
-                  "width": 20,
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "gap": 5,
                 }
-              }
-              transition={null}
-              width={20}
-            />
-            <Text
-              size="small"
-              style={
-                [
-                  {
-                    "color": "#FFFFFF",
-                  },
-                  undefined,
-                  {
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                  },
-                ]
               }
             >
-              perawallet
-            </Text>
+              <ViewManagerAdapter_ExpoImage
+                borderRadius={5}
+                containerViewRef={"[React.ref]"}
+                contentFit="cover"
+                contentPosition={
+                  {
+                    "left": "50%",
+                    "top": "50%",
+                  }
+                }
+                height={20}
+                nativeViewRef={"[React.ref]"}
+                onError={[Function]}
+                onLoad={[Function]}
+                onLoadStart={[Function]}
+                onProgress={[Function]}
+                placeholder={[]}
+                source={
+                  [
+                    {
+                      "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
+                    },
+                  ]
+                }
+                style={
+                  {
+                    "borderRadius": 5,
+                    "height": 20,
+                    "width": 20,
+                  }
+                }
+                transition={null}
+                width={20}
+              />
+              <Text
+                size="small"
+                style={
+                  [
+                    {
+                      "color": "#FFFFFF",
+                    },
+                    undefined,
+                    {
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                perawallet
+              </Text>
+            </View>
           </View>
           <Text
             style={
@@ -2851,61 +2901,71 @@ exports[`Grid component Renders correctly 1`] = `
               {
                 "alignItems": "center",
                 "flexDirection": "row",
-                "gap": 5,
+                "justifyContent": "space-between",
               }
             }
           >
-            <ViewManagerAdapter_ExpoImage
-              borderRadius={5}
-              containerViewRef={"[React.ref]"}
-              contentFit="cover"
-              contentPosition={
-                {
-                  "left": "50%",
-                  "top": "50%",
-                }
-              }
-              height={20}
-              nativeViewRef={"[React.ref]"}
-              onError={[Function]}
-              onLoad={[Function]}
-              onLoadStart={[Function]}
-              onProgress={[Function]}
-              placeholder={[]}
-              source={
-                [
-                  {
-                    "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
-                  },
-                ]
-              }
+            <View
               style={
                 {
-                  "borderRadius": 5,
-                  "height": 20,
-                  "width": 20,
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "gap": 5,
                 }
-              }
-              transition={null}
-              width={20}
-            />
-            <Text
-              size="small"
-              style={
-                [
-                  {
-                    "color": "#FFFFFF",
-                  },
-                  undefined,
-                  {
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                  },
-                ]
               }
             >
-              perawallet
-            </Text>
+              <ViewManagerAdapter_ExpoImage
+                borderRadius={5}
+                containerViewRef={"[React.ref]"}
+                contentFit="cover"
+                contentPosition={
+                  {
+                    "left": "50%",
+                    "top": "50%",
+                  }
+                }
+                height={20}
+                nativeViewRef={"[React.ref]"}
+                onError={[Function]}
+                onLoad={[Function]}
+                onLoadStart={[Function]}
+                onProgress={[Function]}
+                placeholder={[]}
+                source={
+                  [
+                    {
+                      "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
+                    },
+                  ]
+                }
+                style={
+                  {
+                    "borderRadius": 5,
+                    "height": 20,
+                    "width": 20,
+                  }
+                }
+                transition={null}
+                width={20}
+              />
+              <Text
+                size="small"
+                style={
+                  [
+                    {
+                      "color": "#FFFFFF",
+                    },
+                    undefined,
+                    {
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                perawallet
+              </Text>
+            </View>
           </View>
           <Text
             style={
@@ -3184,61 +3244,71 @@ exports[`Grid component Renders correctly 1`] = `
               {
                 "alignItems": "center",
                 "flexDirection": "row",
-                "gap": 5,
+                "justifyContent": "space-between",
               }
             }
           >
-            <ViewManagerAdapter_ExpoImage
-              borderRadius={5}
-              containerViewRef={"[React.ref]"}
-              contentFit="cover"
-              contentPosition={
-                {
-                  "left": "50%",
-                  "top": "50%",
-                }
-              }
-              height={20}
-              nativeViewRef={"[React.ref]"}
-              onError={[Function]}
-              onLoad={[Function]}
-              onLoadStart={[Function]}
-              onProgress={[Function]}
-              placeholder={[]}
-              source={
-                [
-                  {
-                    "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
-                  },
-                ]
-              }
+            <View
               style={
                 {
-                  "borderRadius": 5,
-                  "height": 20,
-                  "width": 20,
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "gap": 5,
                 }
-              }
-              transition={null}
-              width={20}
-            />
-            <Text
-              size="small"
-              style={
-                [
-                  {
-                    "color": "#FFFFFF",
-                  },
-                  undefined,
-                  {
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                  },
-                ]
               }
             >
-              perawallet
-            </Text>
+              <ViewManagerAdapter_ExpoImage
+                borderRadius={5}
+                containerViewRef={"[React.ref]"}
+                contentFit="cover"
+                contentPosition={
+                  {
+                    "left": "50%",
+                    "top": "50%",
+                  }
+                }
+                height={20}
+                nativeViewRef={"[React.ref]"}
+                onError={[Function]}
+                onLoad={[Function]}
+                onLoadStart={[Function]}
+                onProgress={[Function]}
+                placeholder={[]}
+                source={
+                  [
+                    {
+                      "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
+                    },
+                  ]
+                }
+                style={
+                  {
+                    "borderRadius": 5,
+                    "height": 20,
+                    "width": 20,
+                  }
+                }
+                transition={null}
+                width={20}
+              />
+              <Text
+                size="small"
+                style={
+                  [
+                    {
+                      "color": "#FFFFFF",
+                    },
+                    undefined,
+                    {
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                perawallet
+              </Text>
+            </View>
           </View>
           <Text
             style={
@@ -3496,61 +3566,71 @@ exports[`Grid component Renders correctly 1`] = `
               {
                 "alignItems": "center",
                 "flexDirection": "row",
-                "gap": 5,
+                "justifyContent": "space-between",
               }
             }
           >
-            <ViewManagerAdapter_ExpoImage
-              borderRadius={5}
-              containerViewRef={"[React.ref]"}
-              contentFit="cover"
-              contentPosition={
-                {
-                  "left": "50%",
-                  "top": "50%",
-                }
-              }
-              height={20}
-              nativeViewRef={"[React.ref]"}
-              onError={[Function]}
-              onLoad={[Function]}
-              onLoadStart={[Function]}
-              onProgress={[Function]}
-              placeholder={[]}
-              source={
-                [
-                  {
-                    "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
-                  },
-                ]
-              }
+            <View
               style={
                 {
-                  "borderRadius": 5,
-                  "height": 20,
-                  "width": 20,
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "gap": 5,
                 }
-              }
-              transition={null}
-              width={20}
-            />
-            <Text
-              size="small"
-              style={
-                [
-                  {
-                    "color": "#FFFFFF",
-                  },
-                  undefined,
-                  {
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                  },
-                ]
               }
             >
-              perawallet
-            </Text>
+              <ViewManagerAdapter_ExpoImage
+                borderRadius={5}
+                containerViewRef={"[React.ref]"}
+                contentFit="cover"
+                contentPosition={
+                  {
+                    "left": "50%",
+                    "top": "50%",
+                  }
+                }
+                height={20}
+                nativeViewRef={"[React.ref]"}
+                onError={[Function]}
+                onLoad={[Function]}
+                onLoadStart={[Function]}
+                onProgress={[Function]}
+                placeholder={[]}
+                source={
+                  [
+                    {
+                      "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
+                    },
+                  ]
+                }
+                style={
+                  {
+                    "borderRadius": 5,
+                    "height": 20,
+                    "width": 20,
+                  }
+                }
+                transition={null}
+                width={20}
+              />
+              <Text
+                size="small"
+                style={
+                  [
+                    {
+                      "color": "#FFFFFF",
+                    },
+                    undefined,
+                    {
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                perawallet
+              </Text>
+            </View>
           </View>
           <Text
             style={
@@ -3829,61 +3909,71 @@ exports[`Grid component Renders correctly 1`] = `
               {
                 "alignItems": "center",
                 "flexDirection": "row",
-                "gap": 5,
+                "justifyContent": "space-between",
               }
             }
           >
-            <ViewManagerAdapter_ExpoImage
-              borderRadius={5}
-              containerViewRef={"[React.ref]"}
-              contentFit="cover"
-              contentPosition={
-                {
-                  "left": "50%",
-                  "top": "50%",
-                }
-              }
-              height={20}
-              nativeViewRef={"[React.ref]"}
-              onError={[Function]}
-              onLoad={[Function]}
-              onLoadStart={[Function]}
-              onProgress={[Function]}
-              placeholder={[]}
-              source={
-                [
-                  {
-                    "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
-                  },
-                ]
-              }
+            <View
               style={
                 {
-                  "borderRadius": 5,
-                  "height": 20,
-                  "width": 20,
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "gap": 5,
                 }
-              }
-              transition={null}
-              width={20}
-            />
-            <Text
-              size="small"
-              style={
-                [
-                  {
-                    "color": "#FFFFFF",
-                  },
-                  undefined,
-                  {
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                  },
-                ]
               }
             >
-              perawallet
-            </Text>
+              <ViewManagerAdapter_ExpoImage
+                borderRadius={5}
+                containerViewRef={"[React.ref]"}
+                contentFit="cover"
+                contentPosition={
+                  {
+                    "left": "50%",
+                    "top": "50%",
+                  }
+                }
+                height={20}
+                nativeViewRef={"[React.ref]"}
+                onError={[Function]}
+                onLoad={[Function]}
+                onLoadStart={[Function]}
+                onProgress={[Function]}
+                placeholder={[]}
+                source={
+                  [
+                    {
+                      "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
+                    },
+                  ]
+                }
+                style={
+                  {
+                    "borderRadius": 5,
+                    "height": 20,
+                    "width": 20,
+                  }
+                }
+                transition={null}
+                width={20}
+              />
+              <Text
+                size="small"
+                style={
+                  [
+                    {
+                      "color": "#FFFFFF",
+                    },
+                    undefined,
+                    {
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                perawallet
+              </Text>
+            </View>
           </View>
           <Text
             style={
@@ -4143,61 +4233,71 @@ exports[`Grid component Renders correctly 1`] = `
               {
                 "alignItems": "center",
                 "flexDirection": "row",
-                "gap": 5,
+                "justifyContent": "space-between",
               }
             }
           >
-            <ViewManagerAdapter_ExpoImage
-              borderRadius={5}
-              containerViewRef={"[React.ref]"}
-              contentFit="cover"
-              contentPosition={
-                {
-                  "left": "50%",
-                  "top": "50%",
-                }
-              }
-              height={20}
-              nativeViewRef={"[React.ref]"}
-              onError={[Function]}
-              onLoad={[Function]}
-              onLoadStart={[Function]}
-              onProgress={[Function]}
-              placeholder={[]}
-              source={
-                [
-                  {
-                    "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
-                  },
-                ]
-              }
+            <View
               style={
                 {
-                  "borderRadius": 5,
-                  "height": 20,
-                  "width": 20,
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "gap": 5,
                 }
-              }
-              transition={null}
-              width={20}
-            />
-            <Text
-              size="small"
-              style={
-                [
-                  {
-                    "color": "#FFFFFF",
-                  },
-                  undefined,
-                  {
-                    "fontSize": 12,
-                    "fontWeight": "400",
-                  },
-                ]
               }
             >
-              perawallet
-            </Text>
+              <ViewManagerAdapter_ExpoImage
+                borderRadius={5}
+                containerViewRef={"[React.ref]"}
+                contentFit="cover"
+                contentPosition={
+                  {
+                    "left": "50%",
+                    "top": "50%",
+                  }
+                }
+                height={20}
+                nativeViewRef={"[React.ref]"}
+                onError={[Function]}
+                onLoad={[Function]}
+                onLoadStart={[Function]}
+                onProgress={[Function]}
+                placeholder={[]}
+                source={
+                  [
+                    {
+                      "uri": "https://avatars.githubusercontent.com/u/98968122?v=4",
+                    },
+                  ]
+                }
+                style={
+                  {
+                    "borderRadius": 5,
+                    "height": 20,
+                    "width": 20,
+                  }
+                }
+                transition={null}
+                width={20}
+              />
+              <Text
+                size="small"
+                style={
+                  [
+                    {
+                      "color": "#FFFFFF",
+                    },
+                    undefined,
+                    {
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                perawallet
+              </Text>
+            </View>
           </View>
           <Text
             style={
