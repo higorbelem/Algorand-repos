@@ -1,4 +1,4 @@
-# Welcome to your Expo app 👋
+# Welcome to Algorand repos
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
@@ -10,41 +10,38 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npm install
    ```
 
-2. Start the app
+2. Add a .env file to the root of the project, and add the following environment:
+
+   ```
+    EXPO_PUBLIC_GITHUB_KEY=github_xxxxxxxxxx
+   ```
+   
+
+3. Start the app
 
    ```bash
     npx expo start
    ```
+   
+## Screenshots
 
-In the output, you'll find options to open the app in a
+<p float="left">
+   <img src="https://drive.usercontent.google.com/download?id=1BX8KfjHT1JrIkX_GQ0Sk9ekxTHDGiA43" alt="drawing" width="400"/>
+   <img src="https://drive.usercontent.google.com/download?id=1Kf2B4hYmGody53zSZvb1GqC3cZVSCISf" alt="drawing" width="400"/>
+</p>
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Inspirations
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+1. The main inspiration for the UI was of course github itself, but parts of the identity were changed to fit the company a bit better, like the blue background.
 
-## Get a fresh project
+2. The Figma file can be seen [here](https://www.figma.com/design/ut8B39UwSGojdLTDKLv69N/Algorand-repos?node-id=0-1&t=WCOVStoWdgF6I69c-1).
 
-When you're ready, run:
+## Improvements
 
-```bash
-npm run reset-project
-```
+1. <strong>Improve searching</strong>: Since the github API doesn't provide a proper searching parameter, all the searching was done in app. On a real situation the searching would be done on the database through a backend, and also pagination should be implemented.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. <strong>Favorite</strong>: The favorite system is using only AsyncStorage to store the data, in a real scenario all the logic would be on the backed.
 
-## Learn more
+3. <strong>Fetching repositories</strong>: Since the github API doesn't provide a way to get the repositories from multiple orgs at the same time, multiple calls were made.
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+4. <strong>Markdown</strong>: Due to time, I was not able to implement a Markdown viewer, to preview the README.md.
