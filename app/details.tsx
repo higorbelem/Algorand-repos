@@ -14,7 +14,6 @@ import StarIcon from "@/assets/svgs/star.svg";
 import { repoContent } from '@/@types/github';
 import { Files } from '@/components/Files';
 import { API } from '@/services/api';
-import { reposContentMock } from '@/constants/mocks';
 import { Heart } from '@/components/Heart';
 
 export default function Details() {
@@ -23,8 +22,7 @@ export default function Details() {
   const { currentRepo, favorites, addToFavorites } = useMainContextProvider();
 
   useEffect(() => {
-    //getContent();
-    setContent(reposContentMock); // REMOVE
+    getContent();
   }, [])
 
   const getContent = async () => {

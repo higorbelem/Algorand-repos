@@ -50,7 +50,7 @@ export default function Home() {
         <Filter 
           data={orgs.map(item => ({id: item.id, label: item.name}))}
           onItemSelected={item => setFilter(item.id)}
-          showFavorites={!!favorites?.length}
+          showFavorites
         />
 
         {
@@ -59,7 +59,11 @@ export default function Home() {
           )
         }
         
-        <Grid data={filteredSearchRepos.map(item => ({ ...item, favorite: favorites.includes(item.name) }))} onItemSelected={onRepoPress}/>
+        <Grid 
+          data={filteredSearchRepos.map(item => ({ ...item, favorite: favorites.includes(item.name) }))}
+          onItemSelected={onRepoPress}
+          emptyText='No repositories'
+        />
       </SafeAreaView>
     </Background>
   );

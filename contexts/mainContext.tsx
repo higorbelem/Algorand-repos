@@ -81,7 +81,7 @@ export function MainContextProvider({ children }: PropsWithChildren) {
 
     let response: githubRepo[] = [];
 
-    /* for (let i = 0; i < orgs.length; i++) {
+    for (let i = 0; i < orgs.length; i++) {
       const org = orgs[i];
 
       const res = await API<githubRepo[]>(`/orgs/${org.id}/repos`);
@@ -89,9 +89,7 @@ export function MainContextProvider({ children }: PropsWithChildren) {
       if(!res) continue;
 
       response = [...response, ...res]
-    } */
-
-    response = reposMock; // REMOVE
+    }
 
     AsyncStorage.setItem('repositories', JSON.stringify(response));
     setRepos(response);
@@ -103,7 +101,7 @@ export function MainContextProvider({ children }: PropsWithChildren) {
     try {
       let res = favorites;
       if(favorites.includes(repository.name)) {
-        res = res.filter(item => item === repository.name);
+        res = res.filter(item => item !== repository.name);
       } else {
         res = [...res, repository.name];
       }
