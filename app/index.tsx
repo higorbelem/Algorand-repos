@@ -4,7 +4,9 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Background } from '@/components/Background';
 import { Header } from '@/components/Header';
 import { Input } from '@/components/Input';
-import { Filter } from '@/components/Filter/Filter';
+import { Filter } from '@/components/Filter';
+import { Grid } from '@/components/Grid';
+import { reposMock } from '@/constants/mocks';
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
           data={[{id: '2', label: 'Pera Wallet'}, {id: '3', label: 'Algorand Foundation'}, {id: '4', label: 'Algorand'}]}
           onItemSelected={() => {}}
         />
+
+        <Grid data={reposMock} onItemSelected={() => {}}/>
       </SafeAreaView>
     </Background>
   );
@@ -28,7 +32,8 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    width: '100%'
+    width: '100%',
+    gap: 20
   },
   inputContainer: {
     paddingHorizontal: 20

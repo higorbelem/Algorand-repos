@@ -9,13 +9,29 @@ const sizes = {
     tiny: 10
 }
 
+const weights = {
+    bold: "700",
+    normal: "400",
+}
+
 export type TextProps = ReactTextProps & {
    size?: keyof typeof sizes;
+   weight?: keyof typeof weights;
 };
 
 export const Text = (props: TextProps) => {
     return(
-        <T {...props} style={[styles.text, props.style, {fontSize: sizes[props.size || 'normal']}]}>{props.children}</T>
+        <T 
+            {...props} 
+            style={[
+                styles.text, 
+                props.style, 
+                {
+                    fontSize: sizes[props.size || 'normal'],
+                    fontWeight: weights[props.weight || 'normal'] as any
+                }
+            ]}
+        >{props.children}</T>
     )
 }
 

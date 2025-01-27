@@ -1,4 +1,4 @@
-import { StyleSheet, View, ViewProps } from "react-native"
+import { ScrollView, StyleSheet, ViewProps } from "react-native"
 import { useEffect, useState } from "react";
 
 import { FilterItem } from "./FilterItem";
@@ -31,7 +31,12 @@ export const Filter = ({data, onItemSelected}: FilterProps) => {
     }
 
     return(
-        <View style={styles.container}>
+        <ScrollView 
+            style={styles.container} 
+            contentContainerStyle={styles.content} 
+            horizontal 
+            showsHorizontalScrollIndicator={false}
+        >
             <FilterItem 
                 key={AllItem.id} 
                 id={AllItem.id}
@@ -51,17 +56,18 @@ export const Filter = ({data, onItemSelected}: FilterProps) => {
                     />
                 ))
             }
-        </View>
+        </ScrollView>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
-        flexDirection: 'row',
+        flexGrow: 0,
+    },
+    content: {
         alignItems: 'center',
         justifyContent: 'space-between',
-        width: '100%',
-        padding: 20,
-        gap: 10
+        gap: 10,
+        paddingHorizontal: 20
     }
 });

@@ -3,7 +3,7 @@ import { StyleSheet, TouchableOpacity } from "react-native"
 import { Colors } from "@/constants/Colors";
 
 import { Text } from "../Text";
-import { filterItemType } from "./Filter";
+import { filterItemType } from ".";
 
 export type FilterItemProps = filterItemType & {
    selected: boolean;
