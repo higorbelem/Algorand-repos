@@ -1,8 +1,8 @@
-import { StyleSheet, TouchableOpacity, View } from 'react-native';
+import { ActivityIndicator, StyleSheet, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Image } from 'expo-image';
 import * as Linking from 'expo-linking';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { Background } from '@/components/Background';
 import { Header } from '@/components/Header';
@@ -11,13 +11,32 @@ import { Text } from '@/components/Text';
 import ForkIcon from "@/assets/svgs/fork.svg";
 import IssueIcon from "@/assets/svgs/issue.svg";
 import StarIcon from "@/assets/svgs/star.svg";
-import { reposContentMock } from '@/constants/mocks';
 import { repoContent } from '@/@types/github';
 import { Files } from '@/components/Files';
+import { API } from '@/services/api';
 
 export default function Details() {
-  const [content, setContent] = useState<repoContent[]>(reposContentMock);
+  const [content, setContent] = useState<repoContent[]>([]);
+  const [loading, setLoading] = useState(false);
   const { currentRepo } = useMainContextProvider();
+
+  useEffect(() => {
+    getContent();
+  }, [])
+
+  const getContent = async () => {
+    setLoading(true);
+    try {
+      const res = await API<repoContent[]>(`/repos/${currentRepo?.full_name}/contents`);
+
+      if(!res) return;
+      
+      setContent(res);
+    } catch (e) {
+      console.log(e);
+    }
+    setLoading(false);
+  }
 
   const onExplore = async () => {
     if(currentRepo?.html_url && await Linking.canOpenURL(currentRepo.html_url)) 
@@ -64,12 +83,22 @@ export default function Details() {
         <View style={styles.content}>
           <View style={styles.titleContainer}>
             <Image style={styles.image} source={{ uri: currentRepo?.owner.avatar_url }}/>
-            <Text size='header' weight='bold'>{currentRepo?.name}</Text>
+
+            <View>
+              <Text size='small'>{currentRepo?.owner.login}</Text>
+              <Text size='header' weight='bold' numberOfLines={1}>{currentRepo?.name}</Text>
+            </View>
 
             <View style={styles.privateContainer}>
               <Text>{currentRepo?.private ? 'Private' : 'Public'}</Text>
             </View>
           </View>
+        
+          {
+            loading && (
+              <ActivityIndicator style={{ transform: [{ scale: 1.5 }] }}/>
+            )
+          }
 
           <Files data={content} onItemSelected={onFilePress}/>
 
@@ -126,7 +155,8 @@ const styles = StyleSheet.create({
   statsContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-evenly'
+    justifyContent: 'space-evenly',
+    paddingBottom: 20
   },
   statContainer: {
     flexDirection: 'row',
