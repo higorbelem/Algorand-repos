@@ -1,4 +1,9 @@
-export interface githubRepos {
+export interface githubOrg {
+    id: string;
+    name: string;
+}
+
+export interface githubRepo {
     id: number;
     node_id: string;
     name: string;

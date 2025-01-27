@@ -1,17 +1,17 @@
 import { FlatList, ListRenderItem, StyleSheet, ViewProps } from "react-native"
 
-import { githubRepos } from "@/@types/github";
+import { githubRepo } from "@/@types/github";
 
 import { GridItem } from "./GridItem";
 
 export type GridProps = ViewProps & {
-   data: githubRepos[];
-   onItemSelected: (item: githubRepos) => void;
+   data: githubRepo[];
+   onItemSelected: (item: githubRepo) => void;
 };
 
 export const Grid = ({data, onItemSelected}: GridProps) => {
     
-    const renderItem: ListRenderItem<githubRepos> = ({item}) => (
+    const renderItem: ListRenderItem<githubRepo> = ({item}) => (
         <GridItem {...item} onPress={() => {}}/>
     )
 
@@ -29,10 +29,11 @@ export const Grid = ({data, onItemSelected}: GridProps) => {
 
 const styles = StyleSheet.create({
     container: {
-        
+        flex: 1
     },
     content: {
         padding: 20,
+        paddingTop: 0,
         gap: 10
     },
     columnContent: {

@@ -1,8 +1,8 @@
-import { StyleSheet, TouchableOpacity, View } from "react-native"
+import { StyleSheet, TouchableOpacity, View, Dimensions } from "react-native"
 import { Image } from "expo-image";
 
 import { Colors } from "@/constants/Colors";
-import { githubRepos } from "@/@types/github";
+import { githubRepo } from "@/@types/github";
 import ForkIcon from "@/assets/svgs/fork.svg";
 import IssueIcon from "@/assets/svgs/issue.svg";
 import StarIcon from "@/assets/svgs/star.svg";
@@ -10,7 +10,9 @@ import { getLanguageColor } from "@/helpers/getLanguageColor";
 
 import { Text } from "../Text";
 
-export type GridItemProps = githubRepos & {
+const {width} = Dimensions.get('window');
+
+export type GridItemProps = githubRepo & {
    onPress: () => void;
 };
 
@@ -69,7 +71,8 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderRadius: 20,
         padding: 15,
-        gap: 10
+        gap: 10,
+        maxWidth: (width / 2) - 25
     },
     image: {
         width: 20,
@@ -105,7 +108,7 @@ const styles = StyleSheet.create({
     statsContainer: {
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between'
+        justifyContent: 'space-evenly'
     },
     statContainer: {
         flexDirection: 'row',

@@ -62,7 +62,7 @@ export const Filter = ({data, onItemSelected}: FilterProps) => {
 
 const styles = StyleSheet.create({
     container: {
-        flexGrow: 0,
+       flexGrow: 0
     },
     content: {
         alignItems: 'center',

@@ -1,6 +1,6 @@
-import { githubRepos } from "@/@types/github";
+import { githubRepo } from "@/@types/github";
 
-export const reposMock: githubRepos[] = [
+export const reposMock: githubRepo[] = [
     {
         "id": 364359642,
         "node_id": "MDEwOlJlcG9zaXRvcnkzNjQzNTk2NDI=",
