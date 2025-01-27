@@ -5,7 +5,7 @@ import { githubRepo } from "@/@types/github";
 import { GridItem } from "./GridItem";
 
 export type GridProps = ViewProps & {
-   data: githubRepo[];
+   data: (githubRepo & {favorite: boolean})[];
    onItemSelected: (item: githubRepo) => void;
 };
 
@@ -17,6 +17,7 @@ export const Grid = ({data, onItemSelected}: GridProps) => {
 
     return(
         <FlatList 
+            testID="grid-list"
             data={data} 
             renderItem={renderItem} 
             numColumns={2}

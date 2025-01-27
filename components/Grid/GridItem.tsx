@@ -9,20 +9,30 @@ import StarIcon from "@/assets/svgs/star.svg";
 import { getLanguageColor } from "@/helpers/getLanguageColor";
 
 import { Text } from "../Text";
+import { Heart } from "../Heart";
 
 const {width} = Dimensions.get('window');
 
 export type GridItemProps = githubRepo & {
-   onPress: () => void;
+    favorite?: boolean;
+    onPress: () => void;
 };
 
 export const GridItem = (props: GridItemProps) => {
 
     return(
-        <TouchableOpacity style={styles.container} activeOpacity={0.7} onPress={props.onPress}>
-            <View style={styles.ownerContainer}>
-                <Image source={{uri: props.owner.avatar_url}} style={styles.image}/>
-                <Text size="small">{props.owner.login}</Text>
+        <TouchableOpacity testID="grid-item" style={styles.container} activeOpacity={0.7} onPress={props.onPress}>
+            <View style={styles.topContainer}>
+                <View style={styles.ownerContainer}>
+                    <Image source={{uri: props.owner.avatar_url}} style={styles.image}/>
+                    <Text size="small">{props.owner.login}</Text>
+                </View>
+                
+                {
+                    props.favorite && (
+                        <Heart favorite/>
+                    )
+                }
             </View>
 
             <Text weight="bold">{props.name}</Text>
@@ -78,6 +88,11 @@ const styles = StyleSheet.create({
         width: 20,
         height: 20,
         borderRadius: 5
+    },
+    topContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between'
     },
     ownerContainer: {
         flexDirection: 'row',

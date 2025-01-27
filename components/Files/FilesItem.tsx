@@ -16,12 +16,12 @@ export const FilesItem = (props: FilesItemProps) => {
     const style = styles(props.isFirst);
 
     return(
-        <TouchableOpacity style={style.container} activeOpacity={0.7} onPress={props.onPress}>
+        <TouchableOpacity testID="files-item" style={style.container} activeOpacity={0.7} onPress={props.onPress}>
             {
                 props.type === 'dir' ? (
-                    <FolderIcon width={20} height={20}/>
+                    <FolderIcon testID="files-item-folder-icon" width={20} height={20}/>
                 ) : (
-                    <FileIcon width={20} height={20}/>
+                    <FileIcon testID="files-item-file-icon" width={20} height={20}/>
                 )
             }
             <Text>{props.name}</Text>

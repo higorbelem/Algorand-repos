@@ -12,7 +12,7 @@ import { useMainContextProvider } from '@/contexts/mainContext';
 import { githubRepo } from '@/@types/github';
 
 export default function Home() {
-  const {repos, orgs, setCurrentRepository, fetchRepositories, loading} = useMainContextProvider();
+  const {repos, orgs, setCurrentRepository, fetchRepositories, loading, favorites} = useMainContextProvider();
   const [filter, setFilter] = useState<string>();
   const [search, setSearch] = useState<string>("");
 
@@ -20,7 +20,17 @@ export default function Home() {
     fetchRepositories();
   }, []);
 
-  const filteredRepos = repos.filter(item => filter === undefined || filter === 'all' ? true : item.owner.login === filter);
+  const filterRepos = (items: githubRepo[]): githubRepo[] => {
+    return items.filter(item => {
+      if(!filter || filter === 'all') return true;
+
+      if(filter === 'favorites') return favorites.includes(item.name);
+
+      return item.owner.login === filter;
+    })
+  }
+
+  const filteredRepos = filterRepos(repos);
   const filteredSearchRepos = filteredRepos.filter(item => item.name.toLowerCase().includes(search.toLowerCase()));
 
   const onRepoPress = (item: githubRepo) => {
@@ -40,6 +50,7 @@ export default function Home() {
         <Filter 
           data={orgs.map(item => ({id: item.id, label: item.name}))}
           onItemSelected={item => setFilter(item.id)}
+          showFavorites={!!favorites?.length}
         />
 
         {
@@ -48,7 +59,7 @@ export default function Home() {
           )
         }
         
-        <Grid data={filteredSearchRepos} onItemSelected={onRepoPress}/>
+        <Grid data={filteredSearchRepos.map(item => ({ ...item, favorite: favorites.includes(item.name) }))} onItemSelected={onRepoPress}/>
       </SafeAreaView>
     </Background>
   );

@@ -14,14 +14,17 @@ import StarIcon from "@/assets/svgs/star.svg";
 import { repoContent } from '@/@types/github';
 import { Files } from '@/components/Files';
 import { API } from '@/services/api';
+import { reposContentMock } from '@/constants/mocks';
+import { Heart } from '@/components/Heart';
 
 export default function Details() {
   const [content, setContent] = useState<repoContent[]>([]);
   const [loading, setLoading] = useState(false);
-  const { currentRepo } = useMainContextProvider();
+  const { currentRepo, favorites, addToFavorites } = useMainContextProvider();
 
   useEffect(() => {
-    getContent();
+    //getContent();
+    setContent(reposContentMock); // REMOVE
   }, [])
 
   const getContent = async () => {
@@ -36,6 +39,18 @@ export default function Details() {
       console.log(e);
     }
     setLoading(false);
+  }
+
+  const sortContent = (data: repoContent[]) => {
+    const nameSort = data.sort((a, b) => {
+      return a.name.localeCompare(b.name)
+    });
+
+    return [
+      ...nameSort.filter(item => item.type === 'dir'),
+      ...nameSort.filter(item => item.type === 'file'),
+      ...nameSort.filter(item => item.type !== 'dir' && item.type !== 'file'),
+    ];
   }
 
   const onExplore = async () => {
@@ -75,23 +90,34 @@ export default function Details() {
       Linking.openURL(url);
   }
 
+  const onFavoritePress = async () => {
+    if(!currentRepo) return;
+    addToFavorites(currentRepo);
+  }
+
   return (
     <Background>
       <SafeAreaView style={styles.container}>
         <Header showBackButton onExplore={onExplore}/>
      
         <View style={styles.content}>
-          <View style={styles.titleContainer}>
-            <Image style={styles.image} source={{ uri: currentRepo?.owner.avatar_url }}/>
+          <View style={styles.topContainer}>
+            <View style={styles.titleContainer}>
+              <Image style={styles.image} source={{ uri: currentRepo?.owner.avatar_url }}/>
 
-            <View>
-              <Text size='small'>{currentRepo?.owner.login}</Text>
-              <Text size='header' weight='bold' numberOfLines={1}>{currentRepo?.name}</Text>
+              <View style={styles.titleWrapperContainer}>
+                <Text size='small'>{currentRepo?.owner.login}</Text>
+                <Text size='header' weight='bold' numberOfLines={2}>{currentRepo?.name}</Text>
+              </View>
+
+              <View style={styles.privateContainer}>
+                <Text>{currentRepo?.private ? 'Private' : 'Public'}</Text>
+              </View>
             </View>
 
-            <View style={styles.privateContainer}>
-              <Text>{currentRepo?.private ? 'Private' : 'Public'}</Text>
-            </View>
+            <TouchableOpacity style={styles.favoriteButton} activeOpacity={0.7} onPress={onFavoritePress}>
+              <Heart size="big" favorite={!!currentRepo?.name && favorites.includes(currentRepo.name)}/>
+            </TouchableOpacity>
           </View>
         
           {
@@ -100,7 +126,7 @@ export default function Details() {
             )
           }
 
-          <Files data={content} onItemSelected={onFilePress}/>
+          <Files data={sortContent(content)} onItemSelected={onFilePress}/>
 
           <View style={styles.statsContainer}>
             <TouchableOpacity onPress={onStarPress} style={styles.statContainer} activeOpacity={0.7}>
@@ -136,7 +162,16 @@ const styles = StyleSheet.create({
     width: '100%',
     gap: 20
   },
+  topContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between'
+  },
+  titleWrapperContainer: {
+    flex: 1
+  },
   titleContainer: {
+    flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10
@@ -163,4 +198,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 5
   },
+  favoriteButton: {
+    padding: 5
+  }
 });

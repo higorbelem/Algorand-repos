@@ -11,6 +11,7 @@ export type filterItemType = {
 export type FilterProps = ViewProps & {
    data: filterItemType[];
    onItemSelected: (item: filterItemType) => void;
+   showFavorites?: boolean;
 };
 
 const AllItem: filterItemType = {
@@ -18,7 +19,12 @@ const AllItem: filterItemType = {
     label: 'All'
 }
 
-export const Filter = ({data, onItemSelected}: FilterProps) => {
+const FavoritesItem: filterItemType = {
+    id: 'favorites',
+    label: 'Favorites'
+}
+
+export const Filter = ({data, onItemSelected, showFavorites = false}: FilterProps) => {
     const [selectedId, setSelectedId] = useState<string>(AllItem.id);
 
     useEffect(() => {
@@ -44,6 +50,18 @@ export const Filter = ({data, onItemSelected}: FilterProps) => {
                 selected={selectedId === AllItem.id}
                 onPress={() => onPress(AllItem)}
             />
+
+            {
+                showFavorites && (
+                    <FilterItem 
+                        key={FavoritesItem.id} 
+                        id={FavoritesItem.id}
+                        label={FavoritesItem.label}
+                        selected={selectedId === FavoritesItem.id}
+                        onPress={() => onPress(FavoritesItem)}
+                    />
+                )
+            }
 
             {
                 data.map(item => (

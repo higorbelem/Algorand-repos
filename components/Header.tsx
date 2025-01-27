@@ -1,9 +1,10 @@
 import { StyleSheet, TouchableOpacity, View, ViewProps } from "react-native"
 import { router } from "expo-router";
 
-import AlgorandLogo from "@/assets/svgs/algorand_logo.svg";
+import AlgorandLogo from "@/assets/svgs/algorand-logo.svg";
 import ChevronLeftIcon from "@/assets/svgs/chevron-left.svg";
 import { Colors } from "@/constants/Colors";
+
 import { Text } from "./Text";
 
 export type HeaderProps = ViewProps & {
@@ -11,13 +12,13 @@ export type HeaderProps = ViewProps & {
     onExplore?: () => void;
 };
 
-export const Header = ({showBackButton = false, onExplore}: HeaderProps) => {
+export const Header = (props: HeaderProps) => {
     return(
         <View style={styles.container}>
             <View style={styles.leftContainer}>
                 {
-                    showBackButton && (
-                        <TouchableOpacity onPress={() => router.back()} activeOpacity={0.7}>
+                    props.showBackButton && (
+                        <TouchableOpacity testID="back-button" onPress={() => router.back()} activeOpacity={0.7}>
                             <ChevronLeftIcon width={40} height={40}/>
                         </TouchableOpacity>
                     )
@@ -27,8 +28,8 @@ export const Header = ({showBackButton = false, onExplore}: HeaderProps) => {
             </View>
 
             {
-                onExplore && (
-                    <TouchableOpacity onPress={onExplore} activeOpacity={0.7} style={styles.exploreButton}>
+                props.onExplore && (
+                    <TouchableOpacity testID="explore-button" onPress={props.onExplore} activeOpacity={0.7} style={styles.exploreButton}>
                         <Text>Explore</Text>
                     </TouchableOpacity>
                 )

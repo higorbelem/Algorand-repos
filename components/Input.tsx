@@ -5,7 +5,7 @@ import { Colors } from "@/constants/Colors";
 export const Input = (props: TextInputProps) => {
     return(
         <View style={styles.container}>
-            <TextInput {...props} style={styles.input} placeholderTextColor={Colors.text}/>
+            <TextInput testID="input-component" {...props} style={styles.input} placeholderTextColor={Colors.text}/>
         </View>
     )
 }

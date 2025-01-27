@@ -1,0 +1,664 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Files component Renders correctly 1`] = `
+<RCTScrollView
+  contentContainerStyle={
+    {
+      "alignItems": "center",
+      "borderColor": "#FFFFFF",
+      "borderRadius": 20,
+      "borderWidth": 1,
+      "justifyContent": "space-between",
+    }
+  }
+  showsVerticalScrollIndicator={false}
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "borderTopColor": "#FFFFFF",
+          "borderTopWidth": 0,
+          "flex": 1,
+          "flexDirection": "row",
+          "gap": 10,
+          "opacity": 1,
+          "padding": 15,
+          "width": "100%",
+        }
+      }
+      testID="files-item"
+    >
+      <svg
+        height={20}
+        testID="files-item-folder-icon"
+        width={20}
+      />
+      <Text
+        style={
+          [
+            {
+              "color": "#FFFFFF",
+            },
+            undefined,
+            {
+              "fontSize": 16,
+              "fontWeight": "400",
+            },
+          ]
+        }
+      >
+        .ci
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "borderTopColor": "#FFFFFF",
+          "borderTopWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+          "gap": 10,
+          "opacity": 1,
+          "padding": 15,
+          "width": "100%",
+        }
+      }
+      testID="files-item"
+    >
+      <svg
+        height={20}
+        testID="files-item-folder-icon"
+        width={20}
+      />
+      <Text
+        style={
+          [
+            {
+              "color": "#FFFFFF",
+            },
+            undefined,
+            {
+              "fontSize": 16,
+              "fontWeight": "400",
+            },
+          ]
+        }
+      >
+        .github
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "borderTopColor": "#FFFFFF",
+          "borderTopWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+          "gap": 10,
+          "opacity": 1,
+          "padding": 15,
+          "width": "100%",
+        }
+      }
+      testID="files-item"
+    >
+      <svg
+        height={20}
+        testID="files-item-file-icon"
+        width={20}
+      />
+      <Text
+        style={
+          [
+            {
+              "color": "#FFFFFF",
+            },
+            undefined,
+            {
+              "fontSize": 16,
+              "fontWeight": "400",
+            },
+          ]
+        }
+      >
+        .gitignore
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "borderTopColor": "#FFFFFF",
+          "borderTopWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+          "gap": 10,
+          "opacity": 1,
+          "padding": 15,
+          "width": "100%",
+        }
+      }
+      testID="files-item"
+    >
+      <svg
+        height={20}
+        testID="files-item-file-icon"
+        width={20}
+      />
+      <Text
+        style={
+          [
+            {
+              "color": "#FFFFFF",
+            },
+            undefined,
+            {
+              "fontSize": 16,
+              "fontWeight": "400",
+            },
+          ]
+        }
+      >
+        LICENSE
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "borderTopColor": "#FFFFFF",
+          "borderTopWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+          "gap": 10,
+          "opacity": 1,
+          "padding": 15,
+          "width": "100%",
+        }
+      }
+      testID="files-item"
+    >
+      <svg
+        height={20}
+        testID="files-item-file-icon"
+        width={20}
+      />
+      <Text
+        style={
+          [
+            {
+              "color": "#FFFFFF",
+            },
+            undefined,
+            {
+              "fontSize": 16,
+              "fontWeight": "400",
+            },
+          ]
+        }
+      >
+        README.md
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "borderTopColor": "#FFFFFF",
+          "borderTopWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+          "gap": 10,
+          "opacity": 1,
+          "padding": 15,
+          "width": "100%",
+        }
+      }
+      testID="files-item"
+    >
+      <svg
+        height={20}
+        testID="files-item-file-icon"
+        width={20}
+      />
+      <Text
+        style={
+          [
+            {
+              "color": "#FFFFFF",
+            },
+            undefined,
+            {
+              "fontSize": 16,
+              "fontWeight": "400",
+            },
+          ]
+        }
+      >
+        build.gradle
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "borderTopColor": "#FFFFFF",
+          "borderTopWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+          "gap": 10,
+          "opacity": 1,
+          "padding": 15,
+          "width": "100%",
+        }
+      }
+      testID="files-item"
+    >
+      <svg
+        height={20}
+        testID="files-item-folder-icon"
+        width={20}
+      />
+      <Text
+        style={
+          [
+            {
+              "color": "#FFFFFF",
+            },
+            undefined,
+            {
+              "fontSize": 16,
+              "fontWeight": "400",
+            },
+          ]
+        }
+      >
+        gradle
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "borderTopColor": "#FFFFFF",
+          "borderTopWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+          "gap": 10,
+          "opacity": 1,
+          "padding": 15,
+          "width": "100%",
+        }
+      }
+      testID="files-item"
+    >
+      <svg
+        height={20}
+        testID="files-item-file-icon"
+        width={20}
+      />
+      <Text
+        style={
+          [
+            {
+              "color": "#FFFFFF",
+            },
+            undefined,
+            {
+              "fontSize": 16,
+              "fontWeight": "400",
+            },
+          ]
+        }
+      >
+        gradlew
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "borderTopColor": "#FFFFFF",
+          "borderTopWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+          "gap": 10,
+          "opacity": 1,
+          "padding": 15,
+          "width": "100%",
+        }
+      }
+      testID="files-item"
+    >
+      <svg
+        height={20}
+        testID="files-item-file-icon"
+        width={20}
+      />
+      <Text
+        style={
+          [
+            {
+              "color": "#FFFFFF",
+            },
+            undefined,
+            {
+              "fontSize": 16,
+              "fontWeight": "400",
+            },
+          ]
+        }
+      >
+        gradlew.bat
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "borderTopColor": "#FFFFFF",
+          "borderTopWidth": 1,
+          "flex": 1,
+          "flexDirection": "row",
+          "gap": 10,
+          "opacity": 1,
+          "padding": 15,
+          "width": "100%",
+        }
+      }
+      testID="files-item"
+    >
+      <svg
+        height={20}
+        testID="files-item-folder-icon"
+        width={20}
+      />
+      <Text
+        style={
+          [
+            {
+              "color": "#FFFFFF",
+            },
+            undefined,
+            {
+              "fontSize": 16,
+              "fontWeight": "400",
+            },
+          ]
+        }
+      >
+        lib
+      </Text>
+    </View>
+  </View>
+</RCTScrollView>
+`;

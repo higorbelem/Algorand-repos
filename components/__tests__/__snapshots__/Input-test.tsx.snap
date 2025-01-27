@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component Renders correctly 1`] = `
+<View
+  style={
+    {
+      "borderColor": "#FFFFFF",
+      "borderRadius": 20,
+      "borderWidth": 1,
+      "height": 40,
+      "paddingHorizontal": 15,
+    }
+  }
+>
+  <TextInput
+    placeholderTextColor="#FFFFFF"
+    style={
+      {
+        "color": "#FFFFFF",
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+    testID="input-component"
+  />
+</View>
+`;

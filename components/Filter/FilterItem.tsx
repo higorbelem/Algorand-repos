@@ -14,7 +14,7 @@ export const FilterItem = ({label, selected, onPress}: FilterItemProps) => {
     const style = styles(selected);
 
     return(
-        <TouchableOpacity style={style.container} activeOpacity={0.7} onPress={onPress}>
+        <TouchableOpacity testID="filter-item" style={style.container} activeOpacity={0.7} onPress={onPress}>
             <Text>{label}</Text>
         </TouchableOpacity>
     )

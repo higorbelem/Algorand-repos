@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Background component Renders correctly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#191C21",
+      "flex": 1,
+      "width": "100%",
+    }
+  }
+>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight="100%"
+    bbWidth="100%"
+    focusable={false}
+    height="100%"
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "height": "100%",
+          "position": "absolute",
+          "width": "100%",
+        },
+        {
+          "flex": 0,
+          "height": "100%",
+          "width": "100%",
+        },
+      ]
+    }
+    vbHeight={100}
+    vbWidth={100}
+    width="100%"
+  >
+    <RNSVGGroup
+      fill={
+        {
+          "payload": 4278190080,
+          "type": 0,
+        }
+      }
+    >
+      <RNSVGDefs>
+        <RNSVGRadialGradient
+          cx="-200"
+          cy="-200"
+          fx="-200"
+          fy="-200"
+          gradient={
+            [
+              0,
+              -13816335,
+              1,
+              -15131615,
+            ]
+          }
+          gradientTransform={null}
+          gradientUnits={1}
+          name="grad"
+          rx="400"
+          ry="400"
+        />
+      </RNSVGDefs>
+      <RNSVGEllipse
+        cx="-200"
+        cy="-200"
+        fill={
+          {
+            "brushRef": "grad",
+            "type": 1,
+          }
+        }
+        propList={
+          [
+            "fill",
+          ]
+        }
+        rx="400"
+        ry="400"
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <View
+    style={
+      [
+        {
+          "flex": 1,
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  />
+</View>
+`;
