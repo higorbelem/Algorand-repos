@@ -45,3 +45,5 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 3. <strong>Fetching repositories</strong>: Since the github API doesn't provide a way to get the repositories from multiple orgs at the same time, multiple calls were made.
 
 4. <strong>Markdown</strong>: Due to time, I was not able to implement a Markdown viewer, to preview the README.md.
+
+5. <strong>API rate limit</strong>: Since the github API unauthed rate limit is really low, depending on the usage, the limit can be reached, to solve this authentication would need to be implemented.
