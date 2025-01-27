@@ -12,7 +12,7 @@ export type GridProps = ViewProps & {
 export const Grid = ({data, onItemSelected}: GridProps) => {
     
     const renderItem: ListRenderItem<githubRepo> = ({item}) => (
-        <GridItem {...item} onPress={() => {}}/>
+        <GridItem {...item} onPress={() => onItemSelected(item)}/>
     )
 
     return(

@@ -1,4 +1,199 @@
-import { githubRepo } from "@/@types/github";
+import { githubRepo, repoContent } from "@/@types/github";
+
+export const reposContentMock: repoContent[] = [
+    {
+        "name": ".ci",
+        "path": ".ci",
+        "sha": "c7c897bfdf916a58609c71863a28d53c67725d33",
+        "size": 0,
+        "url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/.ci?ref=master",
+        "html_url": "https://github.com/perawallet/kotlin-walletconnect-lib/tree/master/.ci",
+        "git_url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/trees/c7c897bfdf916a58609c71863a28d53c67725d33",
+        "download_url": null,
+        "type": "dir",
+        "_links": {
+            "self": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/.ci?ref=master",
+            "git": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/trees/c7c897bfdf916a58609c71863a28d53c67725d33",
+            "html": "https://github.com/perawallet/kotlin-walletconnect-lib/tree/master/.ci"
+        },
+    },
+    {
+        "name": ".github",
+        "path": ".github",
+        "sha": "446436b6a4e02d9fea40c17535c349f3cb56c7cd",
+        "size": 0,
+        "url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/.github?ref=master",
+        "html_url": "https://github.com/perawallet/kotlin-walletconnect-lib/tree/master/.github",
+        "git_url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/trees/446436b6a4e02d9fea40c17535c349f3cb56c7cd",
+        "download_url": null,
+        "type": "dir",
+        "_links": {
+            "self": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/.github?ref=master",
+            "git": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/trees/446436b6a4e02d9fea40c17535c349f3cb56c7cd",
+            "html": "https://github.com/perawallet/kotlin-walletconnect-lib/tree/master/.github"
+        }
+    },
+    {
+        "name": ".gitignore",
+        "path": ".gitignore",
+        "sha": "c2252eb703cf0c2a3b006caceb345745ef77021e",
+        "size": 770,
+        "url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/.gitignore?ref=master",
+        "html_url": "https://github.com/perawallet/kotlin-walletconnect-lib/blob/master/.gitignore",
+        "git_url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/blobs/c2252eb703cf0c2a3b006caceb345745ef77021e",
+        "download_url": "https://raw.githubusercontent.com/perawallet/kotlin-walletconnect-lib/master/.gitignore",
+        "type": "file",
+        "_links": {
+            "self": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/.gitignore?ref=master",
+            "git": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/blobs/c2252eb703cf0c2a3b006caceb345745ef77021e",
+            "html": "https://github.com/perawallet/kotlin-walletconnect-lib/blob/master/.gitignore"
+        }
+    },
+    {
+        "name": "LICENSE",
+        "path": "LICENSE",
+        "sha": "706f16916f7402e356d373000ab413ef30ba8c1c",
+        "size": 1070,
+        "url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/LICENSE?ref=master",
+        "html_url": "https://github.com/perawallet/kotlin-walletconnect-lib/blob/master/LICENSE",
+        "git_url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/blobs/706f16916f7402e356d373000ab413ef30ba8c1c",
+        "download_url": "https://raw.githubusercontent.com/perawallet/kotlin-walletconnect-lib/master/LICENSE",
+        "type": "file",
+        "_links": {
+            "self": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/LICENSE?ref=master",
+            "git": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/blobs/706f16916f7402e356d373000ab413ef30ba8c1c",
+            "html": "https://github.com/perawallet/kotlin-walletconnect-lib/blob/master/LICENSE"
+        }
+    },
+    {
+        "name": "README.md",
+        "path": "README.md",
+        "sha": "ca91b9bce507357c4ce72b7d6a0d3ab8aa1c6fc5",
+        "size": 497,
+        "url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/README.md?ref=master",
+        "html_url": "https://github.com/perawallet/kotlin-walletconnect-lib/blob/master/README.md",
+        "git_url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/blobs/ca91b9bce507357c4ce72b7d6a0d3ab8aa1c6fc5",
+        "download_url": "https://raw.githubusercontent.com/perawallet/kotlin-walletconnect-lib/master/README.md",
+        "type": "file",
+        "_links": {
+            "self": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/README.md?ref=master",
+            "git": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/blobs/ca91b9bce507357c4ce72b7d6a0d3ab8aa1c6fc5",
+            "html": "https://github.com/perawallet/kotlin-walletconnect-lib/blob/master/README.md"
+        }
+    },
+    {
+        "name": "build.gradle",
+        "path": "build.gradle",
+        "sha": "091a9505b2b682e2c012c8249d88116e10dcc4cb",
+        "size": 1555,
+        "url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/build.gradle?ref=master",
+        "html_url": "https://github.com/perawallet/kotlin-walletconnect-lib/blob/master/build.gradle",
+        "git_url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/blobs/091a9505b2b682e2c012c8249d88116e10dcc4cb",
+        "download_url": "https://raw.githubusercontent.com/perawallet/kotlin-walletconnect-lib/master/build.gradle",
+        "type": "file",
+        "_links": {
+            "self": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/build.gradle?ref=master",
+            "git": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/blobs/091a9505b2b682e2c012c8249d88116e10dcc4cb",
+            "html": "https://github.com/perawallet/kotlin-walletconnect-lib/blob/master/build.gradle"
+        }
+    },
+    {
+        "name": "gradle",
+        "path": "gradle",
+        "sha": "377e906d581a53bcc61f65c13f428137ee57285f",
+        "size": 0,
+        "url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/gradle?ref=master",
+        "html_url": "https://github.com/perawallet/kotlin-walletconnect-lib/tree/master/gradle",
+        "git_url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/trees/377e906d581a53bcc61f65c13f428137ee57285f",
+        "download_url": null,
+        "type": "dir",
+        "_links": {
+            "self": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/gradle?ref=master",
+            "git": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/trees/377e906d581a53bcc61f65c13f428137ee57285f",
+            "html": "https://github.com/perawallet/kotlin-walletconnect-lib/tree/master/gradle"
+        }
+    },
+    {
+        "name": "gradlew",
+        "path": "gradlew",
+        "sha": "4f906e0c811fc9e230eb44819f509cd0627f2600",
+        "size": 5766,
+        "url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/gradlew?ref=master",
+        "html_url": "https://github.com/perawallet/kotlin-walletconnect-lib/blob/master/gradlew",
+        "git_url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/blobs/4f906e0c811fc9e230eb44819f509cd0627f2600",
+        "download_url": "https://raw.githubusercontent.com/perawallet/kotlin-walletconnect-lib/master/gradlew",
+        "type": "file",
+        "_links": {
+            "self": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/gradlew?ref=master",
+            "git": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/blobs/4f906e0c811fc9e230eb44819f509cd0627f2600",
+            "html": "https://github.com/perawallet/kotlin-walletconnect-lib/blob/master/gradlew"
+        }
+    },
+    {
+        "name": "gradlew.bat",
+        "path": "gradlew.bat",
+        "sha": "107acd32c4e687021ef32db511e8a206129b88ec",
+        "size": 2674,
+        "url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/gradlew.bat?ref=master",
+        "html_url": "https://github.com/perawallet/kotlin-walletconnect-lib/blob/master/gradlew.bat",
+        "git_url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/blobs/107acd32c4e687021ef32db511e8a206129b88ec",
+        "download_url": "https://raw.githubusercontent.com/perawallet/kotlin-walletconnect-lib/master/gradlew.bat",
+        "type": "file",
+        "_links": {
+            "self": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/gradlew.bat?ref=master",
+            "git": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/blobs/107acd32c4e687021ef32db511e8a206129b88ec",
+            "html": "https://github.com/perawallet/kotlin-walletconnect-lib/blob/master/gradlew.bat"
+        }
+    },
+    {
+        "name": "lib",
+        "path": "lib",
+        "sha": "322e30efbb10da470aad712af14617b6ae83c276",
+        "size": 0,
+        "url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/lib?ref=master",
+        "html_url": "https://github.com/perawallet/kotlin-walletconnect-lib/tree/master/lib",
+        "git_url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/trees/322e30efbb10da470aad712af14617b6ae83c276",
+        "download_url": null,
+        "type": "dir",
+        "_links": {
+            "self": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/lib?ref=master",
+            "git": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/trees/322e30efbb10da470aad712af14617b6ae83c276",
+            "html": "https://github.com/perawallet/kotlin-walletconnect-lib/tree/master/lib"
+        }
+    },
+    {
+        "name": "sample",
+        "path": "sample",
+        "sha": "71268d1f2bbb7a794ebe936c88ad63fd6f1ad612",
+        "size": 0,
+        "url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/sample?ref=master",
+        "html_url": "https://github.com/perawallet/kotlin-walletconnect-lib/tree/master/sample",
+        "git_url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/trees/71268d1f2bbb7a794ebe936c88ad63fd6f1ad612",
+        "download_url": null,
+        "type": "dir",
+        "_links": {
+            "self": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/sample?ref=master",
+            "git": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/trees/71268d1f2bbb7a794ebe936c88ad63fd6f1ad612",
+            "html": "https://github.com/perawallet/kotlin-walletconnect-lib/tree/master/sample"
+        }
+    },
+    {
+        "name": "settings.gradle",
+        "path": "settings.gradle",
+        "sha": "aed61d3229e1b1c3285b0ac9a570843f8edf8d74",
+        "size": 34,
+        "url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/settings.gradle?ref=master",
+        "html_url": "https://github.com/perawallet/kotlin-walletconnect-lib/blob/master/settings.gradle",
+        "git_url": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/blobs/aed61d3229e1b1c3285b0ac9a570843f8edf8d74",
+        "download_url": "https://raw.githubusercontent.com/perawallet/kotlin-walletconnect-lib/master/settings.gradle",
+        "type": "file",
+        "_links": {
+            "self": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/contents/settings.gradle?ref=master",
+            "git": "https://api.github.com/repos/perawallet/kotlin-walletconnect-lib/git/blobs/aed61d3229e1b1c3285b0ac9a570843f8edf8d74",
+            "html": "https://github.com/perawallet/kotlin-walletconnect-lib/blob/master/settings.gradle"
+        }
+    }
+]
 
 export const reposMock: githubRepo[] = [
     {

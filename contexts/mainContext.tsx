@@ -8,9 +8,13 @@ const organizations: githubOrg[] = [{id: 'perawallet', name: 'Pera Wallet'}, {id
 const MainContext = createContext<{
     orgs: githubOrg[];
     repos: githubRepo[];
+    currentRepo: githubRepo | null;
+    setCurrentRepository: (repository: githubRepo) => void;
 }>({
     repos: [],
-    orgs: []
+    orgs: [],
+    currentRepo: null,
+    setCurrentRepository: () => null
 });
 
 export function useMainContextProvider() {
@@ -27,12 +31,19 @@ export function useMainContextProvider() {
 export function MainContextProvider({ children }: PropsWithChildren) {
   const [orgs, setOrgs] = useState<githubOrg[]>(organizations);
   const [repos, setRepos] = useState<githubRepo[]>(reposMock);
+  const [currentRepo, setCurrentRepo] = useState<githubRepo | null>(null);
+
+  const setCurrentRepository = (repository: githubRepo) => {
+    setCurrentRepo(repository)
+  }
 
   return (
     <MainContext.Provider
       value={{
         orgs,
         repos,
+        currentRepo,
+        setCurrentRepository
       }}>
       {children}
     </MainContext.Provider>
